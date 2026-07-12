@@ -9,9 +9,12 @@ const parser = new Parser({
 const TELEGRAM_API = `https://api.telegram.org/bot${process.env.TELEGRAM_BOT_TOKEN}`;
 
 // How far back to look for "new" items, in minutes.
-// Should be >= your cron interval so nothing falls in the gap between runs.
-// Set LOOKBACK_MINUTES in Vercel env vars to override; defaults to 20.
-const LOOKBACK_MINUTES = parseInt(process.env.LOOKBACK_MINUTES || '20', 10);
+// Should be >= your cron interval so nothing falls in the gap between runs
+// (padded above the interval, since Vercel cron timing can drift slightly).
+// Default of 1500 (25h) matches the daily schedule in vercel.json.
+// If you change the cron schedule, update this to match — see README.
+// Override via LOOKBACK_MINUTES in Vercel env vars.
+const LOOKBACK_MINUTES = parseInt(process.env.LOOKBACK_MINUTES || '1500', 10);
 
 function escapeHtml(str = '') {
   return str
