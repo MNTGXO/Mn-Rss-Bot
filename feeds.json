@@ -1,17 +1,12 @@
 [
   {
-    "name": "Hacker News",
-    "url": "https://news.ycombinator.com/rss",
-    "chatId": "-1001234567890"
+    "name": "psa",
+    "url": "https://bt4gprx.com/search?q=psa&page=rss",
+    "chatId": "-1002517171827"
   },
   {
-    "name": "The Verge",
-    "url": "https://www.theverge.com/rss/index.xml",
-    "chatId": "-1001234567890"
-  },
-  {
-    "name": "Example Blog",
-    "url": "https://example.com/feed.xml",
-    "chatId": "987654321"
+    "name": "archive",
+    "url": "https://archive.org/services/collection-rss.php?collection=moviesandfilms",
+    "chatId": "-1002517171827"
   }
 ]
