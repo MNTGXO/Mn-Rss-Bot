@@ -1,0 +1,15 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "crons": [
+    {
+      "path": "/api/cron",
+      "schedule": "*/15 * * * *"
+    }
+  ],
+  "_comment_schedule": "Vercel Hobby plan only allows once-daily crons. If deploy fails with 'Hobby accounts are limited to daily cron jobs', change schedule to e.g. '0 9 * * *' (daily 9am UTC) and raise LOOKBACK_MINUTES accordingly (e.g. 1440 for 24h). This key is otherwise unused by Vercel and safe to delete.",
+  "functions": {
+    "api/cron.js": {
+      "maxDuration": 60
+    }
+  }
+}
