@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Hacker News",
+    "url": "https://news.ycombinator.com/rss",
+    "chatId": "-1001234567890"
+  },
+  {
+    "name": "The Verge",
+    "url": "https://www.theverge.com/rss/index.xml",
+    "chatId": "-1001234567890"
+  },
+  {
+    "name": "Example Blog",
+    "url": "https://example.com/feed.xml",
+    "chatId": "987654321"
+  }
+]
